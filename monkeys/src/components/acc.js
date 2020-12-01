@@ -1,11 +1,11 @@
 import Categories from './cats'
-import logo from '../logo.svg';
+import acc from '../acc.png'
 
 export default function Acc() {
     return (
 <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={acc} className="App-logo sizer" alt="logo" />
       </header>
       < Categories category={'Accesories'} />
     </div>
