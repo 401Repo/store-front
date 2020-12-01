@@ -24,7 +24,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box data-testid="line-4" p={3}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -47,7 +47,7 @@ function a11yProps(index) {
 
 function LinkTab(props) {
   return (
-    <Tab
+    <Tab 
       component="a"
       onClick={(event) => {
         event.preventDefault();
@@ -73,8 +73,8 @@ export default function NavTabs(props) {
   };
 
   return (
-    <div className="wrapper3">
-    <div className={classes.root}>
+    <div data-testid="line-5" className="wrapper3">
+    <div data-testid="line-6" className={classes.root}>
       <AppBar position="static">
         <Tabs
           variant="fullWidth"
