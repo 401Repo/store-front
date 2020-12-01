@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/store-front/static/css/main.2042d3e0.chunk.css",
+    "main.js": "/store-front/static/js/main.a8c91e45.chunk.js",
+    "main.js.map": "/store-front/static/js/main.a8c91e45.chunk.js.map",
+    "runtime-main.js": "/store-front/static/js/runtime-main.bb318a10.js",
+    "runtime-main.js.map": "/store-front/static/js/runtime-main.bb318a10.js.map",
+    "static/js/2.c1ed855d.chunk.js": "/store-front/static/js/2.c1ed855d.chunk.js",
+    "static/js/2.c1ed855d.chunk.js.map": "/store-front/static/js/2.c1ed855d.chunk.js.map",
+    "index.html": "/store-front/index.html",
+    "static/css/main.2042d3e0.chunk.css.map": "/store-front/static/css/main.2042d3e0.chunk.css.map",
+    "static/js/2.c1ed855d.chunk.js.LICENSE.txt": "/store-front/static/js/2.c1ed855d.chunk.js.LICENSE.txt",
+    "static/media/custom.scss": "/store-front/static/media/SMRPG.c307d7d1.png",
+    "static/media/Star.fcc920ad.png": "/store-front/static/media/Star.fcc920ad.png",
+    "static/media/acc.e1c555da.png": "/store-front/static/media/acc.e1c555da.png",
+    "static/media/armor.9afab1f2.png": "/store-front/static/media/armor.9afab1f2.png",
+    "static/media/item.a5c0fa95.gif": "/store-front/static/media/item.a5c0fa95.gif",
+    "static/media/logo.6ce24c58.svg": "/store-front/static/media/logo.6ce24c58.svg",
+    "static/media/weapon.b1ec6c92.gif": "/store-front/static/media/weapon.b1ec6c92.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb318a10.js",
+    "static/js/2.c1ed855d.chunk.js",
+    "static/css/main.2042d3e0.chunk.css",
+    "static/js/main.a8c91e45.chunk.js"
+  ]
+}
