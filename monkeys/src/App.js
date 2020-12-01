@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import './custom.scss';
+import star from './Star.png'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img  src={logo} className="App-logo" alt="logo" />
+        <img  src={star} className="App-logo sizer" alt="logo" />
         <p data-testid="line-1">
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to the shop!
         </p>
         <a data-testid="line-2"
           className="App-link"
-          href="https://reactjs.org"
+          href="https://thatvetdevrob.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Back to world map
         </a>
       </header>
     </div>
