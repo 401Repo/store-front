@@ -12,6 +12,7 @@ import Clothes from './clothes';
 import Weapons from './weapons';
 import Items from './items';
 import Cart from './cart';
+import CartCounter from './cart-counter';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -88,7 +89,7 @@ export default function NavTabs(props) {
           <LinkTab label="Armor" href="/armor" {...a11yProps(2)} />
           <LinkTab label="Weapons" href="/weapons" {...a11yProps(3)} />
           <LinkTab label="Items" href="/items" {...a11yProps(4)} />
-          <LinkTab label="Cart" href="/cart" {...a11yProps(5)} />
+          <LinkTab label={<CartCounter/>} href="/cart" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
