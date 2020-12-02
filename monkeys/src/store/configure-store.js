@@ -5,9 +5,10 @@ import thunk from 'redux-thunk';
 
 // REDUCERS, just a function, (which will be used to set initial state)
 import categories from './category_reducer';
+import products from './inventory_reducer';
 
 
-let reducers = combineReducers({ categories });
+let reducers = combineReducers({ categories, products });
 
 let store = () => {
   // tons of magic here, our logic hits some redux, this makes our store consumable by something
