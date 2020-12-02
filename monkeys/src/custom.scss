@@ -31,3 +31,26 @@ body {
   padding: 3em;
   height: 6em;
 }
+
+.panel {
+
+    background: url(panel.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.flexor{
+  display: flex;
+    flex-wrap: wrap;
+}
+
+.sizor-item{
+  max-width: 14em;
+}
+
+.topper{
+  margin: auto;
+}

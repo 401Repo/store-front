@@ -11,6 +11,7 @@ import Acc from './acc';
 import Clothes from './clothes';
 import Weapons from './weapons';
 import Items from './items';
+import Cart from './cart';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -73,7 +74,7 @@ export default function NavTabs(props) {
   };
 
   return (
-    <div data-testid="line-5" className="wrapper3">
+    <div data-testid="line-5" className="wrapper3 topper">
     <div data-testid="line-6" className={classes.root}>
       <AppBar position="static">
         <Tabs
@@ -82,11 +83,12 @@ export default function NavTabs(props) {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Home" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Accessories" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Armor" href="/spam" {...a11yProps(2)} />
-          <LinkTab label="Weapons" href="/spam" {...a11yProps(3)} />
-          <LinkTab label="Items" href="/spam" {...a11yProps(4)} />
+          <LinkTab label="Home" href="/home" {...a11yProps(0)} />
+          <LinkTab label="Accessories" href="/acc" {...a11yProps(1)} />
+          <LinkTab label="Armor" href="/armor" {...a11yProps(2)} />
+          <LinkTab label="Weapons" href="/weapons" {...a11yProps(3)} />
+          <LinkTab label="Items" href="/items" {...a11yProps(4)} />
+          <LinkTab label="Cart" href="/cart" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -103,6 +105,9 @@ export default function NavTabs(props) {
       </TabPanel>
       <TabPanel  value={value} index={4}>
        <Items />
+      </TabPanel>
+      <TabPanel  value={value} index={5}>
+       <Cart />
       </TabPanel>
     </div>
  </div>

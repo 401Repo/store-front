@@ -4,10 +4,10 @@
 
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Paper, List, ListItem, Typography } from '@material-ui/core';
+import { Paper, List, ListItem, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-
 import { changeCategory, fetchCategories } from '../store/category_reducer';
+import Products from './inventory';
 
 const useStyles = makeStyles((theme) => ({
     
@@ -42,7 +42,9 @@ const Categories = props => {
   }, []);
   
   let categoriesArr = props.categories.categories;
-  console.log(categoriesArr, 'cat array');
+  console.log(categoriesArr, 'category array');
+
+
   const classes = useStyles();
 
   return (
@@ -54,17 +56,21 @@ const Categories = props => {
           <List>
             {categoriesArr.map((category, idx) => {
               return (
-              <ListItem  key={idx} onClick={() => props.changeCategory({name: category})}>{category} </ListItem>
+              <ListItem  key={idx} onClick={() => props.changeCategory({name: category})}><Button variant="contained" color="secondary">
+              {category}
+            </Button> </ListItem>
               )
             })}
             {/* <p onClick={() => props.changeCategory({name: props.category})}>Hello </p> */}
           </List>
 
+          <Products />
+
         </div>
       </Paper>
       <div className={classes.mainCategory}>
         {/* <Paper elementType="main"> */}
-        <Typography variant="h5">{props.categories.activeCategory.name}</Typography>
+        <Typography variant="h5">Now Browsing: {props.categories.activeCategory.name}</Typography>
         
 
         {/* </Paper> */}
