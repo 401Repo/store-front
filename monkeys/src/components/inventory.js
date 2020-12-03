@@ -8,6 +8,7 @@ import React, { useEffect } from 'react';
 // connect let's us opt-in to the store
 import { connect } from 'react-redux';
 import { Avatar, Paper, List, ListItem, Button, Card, Typography } from '@material-ui/core';
+import { addItem } from '../store/cart_reducer';
 
 // we need some actions that can be run against our reducer
 import { filter, lowerInventory, fetchProducts } from '../store/inventory_reducer';
@@ -23,8 +24,13 @@ const Products = props => {
   const If = (props) => {
     return props.condition ? props.children : null;
   }
+  
 
 console.log("Here in props ", products); 
+
+function addToCart(product) {
+  props.addItem(product);
+}
 
   return (
     <Paper elevation={2} elementType="div">
@@ -38,17 +44,17 @@ console.log("Here in props ", products);
     
     <If condition={product.category === props.categories.activeCategory.name}>
 
-      <Card   variant="outlined">
+      <Card className="display-stuff relativer"  variant="outlined">
 
         <ListItem key={idx + '1'}><img className="sizor-item" alt={product.name} src={product.url} /></ListItem>
 
         <ListItem key={idx + '2'}>Product: {product.name}</ListItem>
 
-        <ListItem key={idx + '3'}>Price: {product.price}</ListItem>
+        <ListItem key={idx + '3'}>Price: ${product.price}.00</ListItem>
 
-        <ListItem key={idx + '4'}>Description: {product.description}</ListItem>
+        <ListItem className='bottomer' key={idx + '4'}>Description: {product.description}</ListItem>
 
-        <ListItem key={idx + '5'}></ListItem>    
+        <Button fullWidth id="" className='button-absoluter' variant="contained" color="secondary" onClick={() => addToCart(product)}> Add To Cart </Button>
 
       </Card>
 
@@ -71,7 +77,7 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = {  filter, lowerInventory, fetchProducts };
+const mapDispatchToProps = {  filter, lowerInventory, fetchProducts, addItem };
 
 export default connect(
   mapStateToProps,
