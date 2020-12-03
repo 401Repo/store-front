@@ -1,9 +1,4 @@
-const initialState = [  {"name":"Mushroom",
-"price": 200,
-"url": "https://www.mariowiki.com/images/e/e1/Red_Mushroom.png",
-"description": "Heal 20HP",
-"category": "Items"
-}];
+const initialState = [  ];
 
 // REDUCERS
 export default (state = initialState, action) => {
