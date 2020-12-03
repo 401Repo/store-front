@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/store-front/static/css/main.e9931905.chunk.css",
-    "main.js": "/store-front/static/js/main.c4b7268f.chunk.js",
-    "main.js.map": "/store-front/static/js/main.c4b7268f.chunk.js.map",
+    "main.css": "/store-front/static/css/main.76889f30.chunk.css",
+    "main.js": "/store-front/static/js/main.b13d0476.chunk.js",
+    "main.js.map": "/store-front/static/js/main.b13d0476.chunk.js.map",
     "runtime-main.js": "/store-front/static/js/runtime-main.bb318a10.js",
     "runtime-main.js.map": "/store-front/static/js/runtime-main.bb318a10.js.map",
     "static/js/2.7ce4376d.chunk.js": "/store-front/static/js/2.7ce4376d.chunk.js",
     "static/js/2.7ce4376d.chunk.js.map": "/store-front/static/js/2.7ce4376d.chunk.js.map",
     "index.html": "/store-front/index.html",
-    "static/css/main.e9931905.chunk.css.map": "/store-front/static/css/main.e9931905.chunk.css.map",
+    "static/css/main.76889f30.chunk.css.map": "/store-front/static/css/main.76889f30.chunk.css.map",
     "static/js/2.7ce4376d.chunk.js.LICENSE.txt": "/store-front/static/js/2.7ce4376d.chunk.js.LICENSE.txt",
     "static/media/custom.scss": "/store-front/static/media/panel.d6953404.png",
     "static/media/Star.fcc920ad.png": "/store-front/static/media/Star.fcc920ad.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.bb318a10.js",
     "static/js/2.7ce4376d.chunk.js",
-    "static/css/main.e9931905.chunk.css",
-    "static/js/main.c4b7268f.chunk.js"
+    "static/css/main.76889f30.chunk.css",
+    "static/js/main.b13d0476.chunk.js"
   ]
 }
