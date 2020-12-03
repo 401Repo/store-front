@@ -33,7 +33,7 @@ function addToCart(product) {
 }
 
   return (
-    <Paper elevation={2} elementType="div">
+    
        <List className='flexor'>
 
 {products.map((product, idx) => {
@@ -48,13 +48,13 @@ function addToCart(product) {
 
         <ListItem key={idx + '1'}><img className="sizor-item" alt={product.name} src={product.url} /></ListItem>
 
-        <ListItem key={idx + '2'}>Product: {product.name}</ListItem>
+        <ListItem key={idx + '2'}>{product.name}</ListItem>
 
         <ListItem key={idx + '3'}>Price: ${product.price}.00</ListItem>
 
         <ListItem className='bottomer' key={idx + '4'}>Description: {product.description}</ListItem>
 
-        <Button fullWidth id="" className='button-absoluter' variant="contained" color="secondary" onClick={() => addToCart(product)}> Add To Cart </Button>
+        <Button style={{minWidth: '90%', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginBottom: '5px'}} id="" className='button-absoluter' variant="contained" color="secondary" onClick={() => addToCart(product)}> Add To Cart </Button>
 
       </Card>
 
@@ -63,7 +63,7 @@ function addToCart(product) {
   )
 })}
 </List>
-    </Paper>
+  
   )
 }
 

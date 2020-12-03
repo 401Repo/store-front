@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.bar{
+  font-family: 'Rubik Mono One', sans-serif;
+}
 
 body {
   background-color: aliceblue;
@@ -11,6 +18,37 @@ body {
   perspective: 1000px;
   perspective-origin: 50% 50%;
   animation: animation 100s linear infinite;
+}
+
+.radier{
+  border-radius: 7px;
+}
+
+.head_font{
+  font-family: 'Nerko One', cursive;
+  
+  text-shadow: 2px 2px #cac0ee;
+
+}
+
+.total_font{
+  font-family: 'Concert One', cursive;
+  font-size: larger;
+  text-shadow: 2px 2px #cac0ee;
+}
+
+.page_font{
+  font-family: 'Concert One', cursive;
+  font-size: larger;
+  text-shadow: 2px 2px #cac0ee;
+}
+
+
+
+.love{
+  background-color: rgb(255, 0, 106);
+  background-color: #ba421b;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='37' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%239e3817' fill-opacity='0.44'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.44'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .title {
@@ -41,6 +79,11 @@ body {
   height: 6em;
 }
 
+.sizer5{
+
+  height: 12em;
+}
+
 .panel {
 
     background: url(panel.png) no-repeat center center fixed; 
@@ -69,6 +112,9 @@ body {
   margin-left: 5px;
   margin: 5px;
   margin-bottom: 1em;
+  font-family: 'Concert One', cursive;
+  text-shadow: 1px 1px #b3b8e0;
+  font-size: medium;
 }
 
 .button-absoluter{
@@ -91,8 +137,9 @@ body {
 }
 
 .sizor-item{
-  max-width: 14em;
+  max-width: 10em;
   max-height: 10em !important;
+  margin: auto;
 }
 
 .diplay-stuff{
@@ -129,6 +176,54 @@ body {
   float: right;
   margin-left:2em;
 }
+
+.linker{
+  color: rgb(100, 235, 235);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+#auto{
+  margin: auto;
+}
+
+#panelB{
+  background: url("https://c4.wallpaperflare.com/wallpaper/953/802/548/mario-stars-wallpaper-preview.jpg") ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#panelA{
+  background: url("https://catwithmonocle.com/wp-content/uploads/2020/09/sm35-pattern-v1-3840x2160-1.jpg") ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#panelD{
+  background: url("https://i.ytimg.com/vi/GbFmVbr7xKg/maxresdefault.jpg")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+#panelC{
+  background: url("https://florian-rappl.de/html5/projects/SuperMario/mario-background_4.png") ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.linker:hover{
+  color: #0a3c6b;
+}
+
 //////////////////////// FORM ///////////////////////@at-root
 
 @import url('https://fonts.googleapis.com/css?family=Arimo');
@@ -149,6 +244,8 @@ $title: #493b76;
     -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     animation: slideUp 2000ms ease;
+    margin-bottom: 22px;
+    margin-right: 6em;
 }
 
 @keyframes slideUp {

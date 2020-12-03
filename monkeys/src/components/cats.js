@@ -39,7 +39,7 @@ const Categories = props => {
   useEffect(() => {
     props.fetchCategories();
     props.changeCategory({name: props.category})
-  }, []);
+  },[]);
   
   let categoriesArr = props.categories.categories;
   console.log(categoriesArr, 'category array');
@@ -48,34 +48,33 @@ const Categories = props => {
   const classes = useStyles();
 
   return (
-    <Paper elevation={0} elementType="div">
-      <Paper elementType="section">
-  <Typography className={classes.title} variant="h4">Browse Our {props.categories.activeCategory.name}</Typography>
+    <Paper id='panelA' elevation={0} elementType="div">
+      
+  <Typography className={classes.title} variant="h4"><span className='page_font'>Browse Our {props.categories.activeCategory.name}</span></Typography>
         <div className={classes.list}>
 
           <List>
             {categoriesArr.map((category, idx) => {
               return (
-              <ListItem  key={idx} onClick={() => props.changeCategory({name: category})}><Button variant="contained" color="secondary">
+              <ListItem  key={idx} onClick={() => props.changeCategory({name: category})}><Button  style={{maxWidth: '9em', width: '9em', marginBottom: '5px'}} variant="contained" color="secondary">
               {category}
             </Button> </ListItem>
               )
             })}
-            {/* <p onClick={() => props.changeCategory({name: props.category})}>Hello </p> */}
+            
           </List>
 
           <Products />
 
         </div>
+        <div className={classes.mainCategory}>
+       
+       <Typography variant="h4"><span className='page_font'>Now Browsing: {props.categories.activeCategory.name}</span></Typography>
+       
+     </div>
       </Paper>
-      <div className={classes.mainCategory}>
-        {/* <Paper elementType="main"> */}
-        <Typography variant="h5">Now Browsing: {props.categories.activeCategory.name}</Typography>
-        
-
-        {/* </Paper> */}
-      </div>
-    </Paper>
+      
+   
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import useWindowSize from 'react-use/lib/useWindowSize'
@@ -37,15 +37,22 @@ export default function SimpleModal() {
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
+
+
   const handleOpen = () => {
     setOpen(true);
     setTimeout(() => {
+      let baseUrl = window.location.href.split("?")[0];
+      window.history.pushState('name', '', baseUrl);
         window.location.reload(false);
      }, 4000)
   };
 
+
   const handleClose = () => {
     setOpen(false);
+    let baseUrl = window.location.href.split("?")[0];
+      window.history.pushState('name', '', baseUrl);
     window.location.reload();
   };
 
@@ -66,11 +73,15 @@ export default function SimpleModal() {
     </div>
     </div>
   );
- 
+
+  useEffect(() => {
+    handleOpen();
+  }, []);
+
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open Modal
+      <button style={{maxWidth: '9em', width: '9em', marginBottom: '5px'}} type="button" onClick={handleOpen}>
+        Pay
       </button>
       <Modal
         open={open}

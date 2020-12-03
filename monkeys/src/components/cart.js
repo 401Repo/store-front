@@ -3,10 +3,11 @@ import Checkout from './checkout'
 function Cart() {
   return (
     <div className="App">
-      <header className="App-header panel">
-        <img  src={logo} className="App-logo sizer" alt="logo" />
-        <Checkout />
+      <header id="panelC" className="App-header panel radier">
+        <img  src="https://www.mariowiki.com/images/8/85/PMTOK_Olivia_Artwork_2.png" className="App-logo sizer" alt="logo" />
       </header>
+      <p></p>
+      <Checkout />
     </div>
   );
 }
