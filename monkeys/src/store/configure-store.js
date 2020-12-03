@@ -1,9 +1,9 @@
-// Redux Magic!! Trust that it's doing what it says it's doing, based on the names of vars
+// More on this: this is sinplified for class
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-// REDUCERS, just a function, (which will be used to set initial state)
+// Reducer
 import categories from './category_reducer';
 import products from './inventory_reducer';
 import cart from './cart_reducer';
