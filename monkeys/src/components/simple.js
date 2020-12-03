@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import useWindowSize from 'react-use/lib/useWindowSize'
@@ -37,15 +37,22 @@ export default function SimpleModal() {
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
+
+
   const handleOpen = () => {
     setOpen(true);
     setTimeout(() => {
+      let baseUrl = window.location.href.split("?")[0];
+      window.history.pushState('name', '', baseUrl);
         window.location.reload(false);
      }, 4000)
   };
 
+
   const handleClose = () => {
     setOpen(false);
+    let baseUrl = window.location.href.split("?")[0];
+      window.history.pushState('name', '', baseUrl);
     window.location.reload();
   };
 
@@ -54,24 +61,22 @@ export default function SimpleModal() {
       width={width}
       height={height}
     />
-    <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
+    <div id='panelE' style={modalStyle} className={classes.paper}>
+      <h2 id="simple-modal-title">Success!</h2>
       <p id="simple-modal-description">
-      YOUR ITEMS ARE ON THE WAY!&hearts;
+      YOUR ITEMS ARE ON THE WAY! &hearts;
       </p>
      
-      <button type="button" onClick={handleClose}>
-        Close
-      </button>
     </div>
     </div>
   );
- 
+
+  useEffect(() => {
+    handleOpen();
+  }, []);
+
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open Modal
-      </button>
       <Modal
         open={open}
         onClose={handleClose}

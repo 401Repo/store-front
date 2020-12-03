@@ -20,6 +20,7 @@ function TabPanel(props) {
   return (
     <div
       role="tabpanel"
+      className="love"
       hidden={value !== index}
       id={`nav-tabpanel-${index}`}
       aria-labelledby={`nav-tab-${index}`}
@@ -84,15 +85,15 @@ export default function NavTabs(props) {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Home" href="/home" {...a11yProps(0)} />
-          <LinkTab label="Accessories" href="/acc" {...a11yProps(1)} />
-          <LinkTab label="Armor" href="/armor" {...a11yProps(2)} />
-          <LinkTab label="Weapons" href="/weapons" {...a11yProps(3)} />
-          <LinkTab label="Items" href="/items" {...a11yProps(4)} />
-          <LinkTab label={<CartCounter/>} href="/cart" {...a11yProps(5)} />
+          <LinkTab className='bar' label="Home" href="/home" {...a11yProps(0)} />
+          <LinkTab className='bar' label="Accessories" href="/acc" {...a11yProps(1)} />
+          <LinkTab className='bar' label="Armor" href="/armor" {...a11yProps(2)} />
+          <LinkTab className='bar' label="Weapons" href="/weapons" {...a11yProps(3)} />
+          <LinkTab className='bar' label="Items" href="/items" {...a11yProps(4)} />
+          <LinkTab className='bar' label={<CartCounter/>} href="/cart" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      <TabPanel  value={value} index={0}>
       <App />
       </TabPanel>
       <TabPanel value={value} index={1}>

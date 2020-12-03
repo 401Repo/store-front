@@ -4,9 +4,10 @@ import acc from '../acc.png'
 export default function Clothes() {
   return (
     <div className="App ">
-      <header className="App-header  panel">
-        <img src={acc} className="App-logo sizer" alt="logo" />
+      <header id='panelB'className="App-header  panel radier">
+        <img  src={acc} className="App-logo sizer" alt="logo" />
       </header>
+      <p></p>
       < Categories category={'Armor'} />
     </div>
   );
