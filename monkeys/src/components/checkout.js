@@ -125,7 +125,7 @@ const SimpleCart = props => {
                                             </div>
                                         </div>
                                         <div class="btns">
-                                            <input id="btn" type="submit" value='pay' />
+                                            <input className='buttonX' type="submit" value='pay' />
 
 
                                         </div>

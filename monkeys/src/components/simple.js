@@ -61,15 +61,12 @@ export default function SimpleModal() {
       width={width}
       height={height}
     />
-    <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
+    <div id='panelE' style={modalStyle} className={classes.paper}>
+      <h2 id="simple-modal-title">Success!</h2>
       <p id="simple-modal-description">
-      YOUR ITEMS ARE ON THE WAY!&hearts;
+      YOUR ITEMS ARE ON THE WAY! &hearts;
       </p>
      
-      <button type="button" onClick={handleClose}>
-        Close
-      </button>
     </div>
     </div>
   );
@@ -80,9 +77,6 @@ export default function SimpleModal() {
 
   return (
     <div>
-      <button style={{maxWidth: '9em', width: '9em', marginBottom: '5px'}} type="button" onClick={handleOpen}>
-        Pay
-      </button>
       <Modal
         open={open}
         onClose={handleClose}

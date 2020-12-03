@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .bar{
   font-family: 'Rubik Mono One', sans-serif;
@@ -212,6 +213,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   -webkit-text-stroke-color: black;
 }
 
+#panelE{
+  background: url("https://www.xmple.com/wallpaper/white-polka-dots-hexagon-pink-1920x1080-c2-ffb6c1-ffffff-l2-69-120-a-30-f-4.svg")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Concert One', cursive;
+  font-size: larger;
+  text-shadow: 2px 2px #cac0ee;
+  border-radius: 20px;
+  border: solid grey 9px;
+}
+
 #panelC{
   background: url("https://florian-rappl.de/html5/projects/SuperMario/mario-background_4.png") ; 
   -webkit-background-size: cover;
@@ -222,6 +236,26 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .linker:hover{
   color: #0a3c6b;
+}
+
+.buttonX {
+  margin: 3px 0;
+  height: 30px;
+  width: 40%;
+  color: #cfc9e1;
+  background-color: #4a3b76;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: .3rem;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+      animation-name: btn-hov;
+      animation-duration: 550ms;
+      animation-fill-mode: forwards;
+  }
 }
 
 //////////////////////// FORM ///////////////////////@at-root
@@ -246,6 +280,8 @@ $title: #493b76;
     animation: slideUp 2000ms ease;
     margin-bottom: 22px;
     margin-right: 6em;
+    border-radius: 30px;
+    
 }
 
 @keyframes slideUp {
@@ -419,4 +455,24 @@ button:focus {
         margin: 5px 0;
         min-height: 30px;
     }
+}
+
+
+/////////////////    Rocking
+
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-30deg); }
+  20% {transform:scale(.95);}
+  50% { transform: rotate(30deg); }
+  80% {transform:scale(.95);}
+}
+
+#sweetlandia {
+  animation: swing 5s infinite ease-in-out;
+}
+
+.event{
+margin: auto;
+  text-align:center;
 }
