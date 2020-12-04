@@ -31,3 +31,9 @@ Virtual Store Phase 1: For this assignment, you will be starting the process of 
 - background by DustinVG at: [Link](https://www.mfgg.net/?act=resdb&param=02&c=1&id=33981)
 
 - css background animation: Pattern Animation (Infinite) Adam Abundis
+
+- form from: Theresa at https://codepen.io/theresa-e
+
+- grey texture backgrounds from: https://www.svgbackgrounds.com/#protruding-squares
+
+- "rocking" animation from Marcy Williams-Pudalov
